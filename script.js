@@ -1,5 +1,28 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Menú hamburguesa (móvil)
+(function mobileNav() {
+  const toggle = document.getElementById("nav-toggle");
+  const toggleIcon = document.getElementById("nav-toggle-icon");
+  const links = document.getElementById("nav-links");
+  if (!toggle || !links) return;
+
+  function setOpen(open) {
+    links.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+    toggleIcon.innerHTML = `<use href="${open ? "#icon-close" : "#icon-menu"}"/>`;
+  }
+
+  toggle.addEventListener("click", () => {
+    setOpen(!links.classList.contains("open"));
+  });
+
+  links.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setOpen(false));
+  });
+})();
+
 // Efecto de escritura estilo terminal para el rol
 (function typeRole() {
   const el = document.getElementById("typed-role");

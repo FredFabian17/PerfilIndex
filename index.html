@@ -62,6 +62,12 @@
       <rect x="5" y="11" width="14" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
       <path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/>
     </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
   </svg>
 
   <canvas id="network-bg" aria-hidden="true"></canvas>
@@ -73,8 +79,11 @@
         <svg class="icon"><use href="#icon-terminal"/></svg>
         Fred<span class="accent">.</span>Fabian
       </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon" id="nav-toggle-icon"><use href="#icon-menu"/></svg>
+      </button>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li><a href="#inicio"><span class="idx">01</span> Inicio</a></li>
           <li><a href="#proyectos"><span class="idx">02</span> Proyectos</a></li>
           <li><a href="#stack"><span class="idx">03</span> Stack</a></li>
