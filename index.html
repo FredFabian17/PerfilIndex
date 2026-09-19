@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TU NOMBRE — Portafolio</title>
+  <meta name="description" content="Portafolio de TU NOMBRE — Desarrollador de software" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="logo">TU NOMBRE</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Hola, soy</p>
+        <h1 class="hero__name">TU NOMBRE</h1>
+        <h2 class="hero__role">TU ROL PROFESIONAL (ej. Desarrollador Full Stack)</h2>
+        <p class="hero__bio">
+          Breve descripción de 1-2 líneas sobre lo que haces y qué te apasiona
+          del desarrollo de software.
+        </p>
+        <div class="hero__cta">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--outline">Contáctame</a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/FredFabian17" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:tu-correo@ejemplo.com" aria-label="Correo">Correo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section__title">Proyectos</h2>
+        <p class="section__subtitle">Algunos de los proyectos en los que he trabajado</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3 class="card__title">Nombre del Proyecto 1</h3>
+            <p class="card__tag">Tipo / Categoría (ej. Backend, Automatización)</p>
+            <p class="card__desc">
+              Descripción breve de qué hace el proyecto y qué problema resuelve.
+            </p>
+            <div class="card__tech">
+              <span class="badge">Python</span>
+              <span class="badge">FastAPI</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/FredFabian17/REPO" target="_blank" rel="noopener">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Nombre del Proyecto 2</h3>
+            <p class="card__tag">Tipo / Categoría</p>
+            <p class="card__desc">
+              Descripción breve del proyecto.
+            </p>
+            <div class="card__tech">
+              <span class="badge">Tecnología</span>
+            </div>
+            <div class="card__links">
+              <a href="#" target="_blank" rel="noopener">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Nombre del Proyecto 3</h3>
+            <p class="card__tag">Tipo / Categoría</p>
+            <p class="card__desc">
+              Descripción breve del proyecto.
+            </p>
+            <div class="card__tech">
+              <span class="badge">Tecnología</span>
+            </div>
+            <div class="card__links">
+              <a href="#" target="_blank" rel="noopener">Ver en GitHub →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Stack Tecnológico</h2>
+        <div class="badges-row">
+          <span class="badge badge--lg">Python</span>
+          <span class="badge badge--lg">Git</span>
+          <span class="badge badge--lg">SQL</span>
+          <span class="badge badge--lg">FastAPI</span>
+          <span class="badge badge--lg">Docker</span>
+          <!-- Agrega/quita según tu stack real -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="section">
+      <div class="container about">
+        <h2 class="section__title">Sobre mí</h2>
+        <p class="about__text">
+          Cuéntanos tu trayectoria: formación, experiencia laboral, intereses
+          técnicos y qué te motiva como desarrollador. 2-4 líneas suele ser
+          suficiente para esta sección.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--alt">
+      <div class="container contact">
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__subtitle">¿Quieres conversar? Encuéntrame aquí:</p>
+        <div class="contact__links">
+          <a href="https://github.com/FredFabian17" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+          <a href="mailto:tu-correo@ejemplo.com" class="btn btn--outline">Correo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> TU NOMBRE. Hecho con GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
